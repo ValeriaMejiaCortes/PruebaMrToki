@@ -1,0 +1,7 @@
+{
+  "name": "pruebaMrToki",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
