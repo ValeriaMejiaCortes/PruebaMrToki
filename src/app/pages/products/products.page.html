@@ -1,0 +1,7 @@
+<ion-content>
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide *ngFor="let category of categories">
+      <h1>{{category.title}}</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

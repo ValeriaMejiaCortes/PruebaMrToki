@@ -1,0 +1,13 @@
+<ion-content>
+  <div id="divTop">
+    <div id="mrtoki_img">
+      <img class="icons" src="../../../assets/icons/icon-toki.png" />
+    </div>
+  </div>
+
+  <ion-toolbar>
+    <ion-title id="title">Restaurantes</ion-title>
+  </ion-toolbar>
+  <app-restaurant-card *ngFor="let restaurant of restaurants" [restaurant]="restaurant"></app-restaurant-card>
+
+</ion-content>

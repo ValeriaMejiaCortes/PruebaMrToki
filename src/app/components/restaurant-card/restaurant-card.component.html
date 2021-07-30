@@ -1,0 +1,25 @@
+<ion-card (click)=getRestaurant(restaurant)>
+  <img id="restaurant_img" src="http://placekitten.com/300/200" />
+  <div id="location_corner">
+    <img id="location_img" src="../../../assets/icons/icon-ubicacion-active.png" />
+  </div>
+  <div>
+    <ion-item>
+      <ion-card-header>
+        <ion-card-title>{{restaurant.name}}</ion-card-title>
+        <ion-card-subtitle>{{restaurant.description}}</ion-card-subtitle>
+        <div>
+          <img class="icons" src="../../../assets/icons/icon-plato.png" />
+          <img class="icons" src="../../../assets/icons/icon-bolsa.png" />
+          <img class="icons" id="mesa_icon" src="../../../assets/icons/icon-mesa-light.png" />
+          <img class="icons" src="../../../assets/icons/icon-domicilio.png" />
+        </div>
+      </ion-card-header>
+
+    </ion-item>
+
+    <div *ngIf="!restaurant.is_open" id="is_open">
+      Abierto
+    </div>
+  </div>
+</ion-card>
