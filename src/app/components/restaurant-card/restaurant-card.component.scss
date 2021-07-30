@@ -1,0 +1,57 @@
+ion-card{
+    margin-top: 1%;
+    display: flex;
+    position: relative;
+    padding: 2% 3% 2.5% 2% !important;
+    box-shadow: rgb(66 61 18 / 47%) 0px 3px 9px;
+}
+
+#location_corner{
+    position: absolute;
+    top: -4%;
+    width: 20%;
+    z-index: 2;
+    height: 20%;
+    left: 90.9%;
+}
+
+#location_img{
+    max-width: 51%;
+}
+
+#restaurant_img{
+    min-width: 20%;
+    max-width: 20%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#is_open{
+    margin-left: 12%;
+    font-weight: bold;
+    color: var(--base-color);
+}
+
+.icons{
+    max-width: 21%;
+}
+
+#mesa_icon{
+    padding: 4%;
+}
+
+ion-card-header{
+    padding: 0%;
+}
+
+ion-card-subtitle{
+    font-size: 58%;
+    margin-top: 2%;
+    color: var(--gray-light) ;
+}
+
+ion-card-title{
+    font-size: 98%;
+    color: var(--base-color) ;
+}
