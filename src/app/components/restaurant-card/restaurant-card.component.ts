@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-restaurant-card',
@@ -9,10 +10,17 @@ export class RestaurantCardComponent implements OnInit {
 
   @Input() restaurant: Object;
 
-  constructor() { }
+  constructor(
+    private _router: Router
+  ) { }
 
   ngOnInit() {
-    console.dir(this.restaurant);
+  }
+
+  getRestaurant(restaurant) {
+    const id = restaurant.id;
+    this._router.navigate(['products', id])
+    console.log("RESTAURANTE ID -> " + id);
   }
 
 }
