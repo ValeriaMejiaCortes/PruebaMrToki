@@ -1,0 +1,41 @@
+#divTop{
+    width: 100%;
+    height: 24%;
+    display: flex;
+    margin-bottom: 25%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(228,109,51,1) 0%, rgba(227,68,76,1) 100%);
+}
+
+#divTop::before{
+    position: absolute;
+    content: "";
+    width: 113%;
+    height: 25%;
+    top: 10%;
+    border-radius: 100%;
+    background: linear-gradient(90deg, rgba(228,109,51,1) 0%, rgba(227,68,76,1) 100%);
+}
+
+#mrtoki_img{
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons{
+    width: 56.93%;
+    height: 16.55%;
+    margin-top: 46%;
+}
+
+#title {
+    color: var(--base-color) ;
+    text-align: left ;
+    padding-left: 5% ;
+}
+
